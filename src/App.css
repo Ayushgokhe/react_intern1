@@ -32,7 +32,153 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(75, 149, 247), rgb(71, 72, 83));
+}
+
+.header {
+  text-align: center;
+  color: rgb(34 197 94);
+  font-weight: 700;
+  font-size: 36px;
+  animation: up-down 0.9s ease-in-out infinite alternate-reverse both;
+  margin: 0px;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.container {}
+
+.content {
+  background-color: white;
+  width: 238px;
+  height: 140px;
+  text-align: center;
+  padding: 18px 0 0 0;
+  border-radius: 9px;
+  margin: 17px 10px;
+}
+
+.content p {
+  margin-top: -17px;
+  color: rgb(107 33 168);
+}
+
+.content h2 {
+  color: rgb(30 58 138);
+}
+
+.content:hover {
+  box-shadow: 1px 1px 11px 1px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+
+@media screen and (max-width:1030px) {
+  .card_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .card_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+  }
+
+  .content {
+    width: 77px;
+    height: 10px;
+    margin: 3px;
+  }
+
+  .content h2 {
+    font-size: 14px;
+    margin-top: -14px;
+  }
+
+  .content p {
+    display: none;
+  }
+}
+
+.pop_container {
+  background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
+  position: absolute;
+  width: 50%;
+  top: 14rem;
+  left: 27%;
+  padding: 1.2rem;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+.pop_container h1 {
+  text-align: center;
+  color: white;
+  margin-top: -5px;
+}
+
+.pop_content {
+  padding: 0 25px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.pop_content p {
+  margin-top: 13px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pop_container button {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: .375rem;
+  cursor: pointer;
+  font-size: 100%;
+  margin: 0.5rem 0.75rem;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  background-color: rgba(37 99 235);
+}
+
+.pop_container button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width:600px) {
+  .pop_container {
+    position: relative;
+    width: 100%;
+    left: 0%;
+    margin-top: -170px;
+  }
+  .pop_content p{
+    font-size: 17px;
   }
 }
