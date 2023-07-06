@@ -1,3 +1,12 @@
+Hello sir, i tried to solve the onclick function dynamically but still not get it, because of that i could not show the click fuction,but i created a pop up box ready. rather than this i completed all and it is 100% responsive
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
